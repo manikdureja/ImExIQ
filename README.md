@@ -178,7 +178,8 @@ ImExIQ aims to evolve into a **global trade intelligence layer** that continuous
 ## 👨‍💻 Contributors
 
 * Tanmay Singh
-* Project collaborators
+* Tanveer Singh
+* Tanuj Lohani
 
 ---
 
