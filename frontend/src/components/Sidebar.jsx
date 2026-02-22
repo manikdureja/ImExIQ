@@ -2,7 +2,6 @@
 const navItems = [
   { id: "dashboard", label: "Dashboard",        icon: "⬡", badge: null },
   { id: "deals",     label: "Active Deals",     icon: "◈", badge: 24 },
-  { id: "risk",      label: "Risk Analytics",   icon: "◆", badge: null },
   { id: "forecast",  label: "Price Forecast",   icon: "◒", badge: null },
   { id: "fx",        label: "FX Monitor",       icon: "○", badge: null },
   { id: "documents", label: "Documents",        icon: "≡", badge: null },
