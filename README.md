@@ -1,23 +1,191 @@
-# Trade IQ (Hackathon MVP)
+# 🌍 ImExIQ — AI-Powered Cross-Border Trade Risk Intelligence Platform
 
-A Bloomberg-terminal-inspired dashboard for **small import/export businesses** and **solo traders**.
+**ImExIQ (Import–Export Intelligence Quotient)** is an end-to-end trade analytics platform that quantifies and predicts cross-border deal risk by combining **policy, market, logistics, geopolitical, and compliance signals** into a unified intelligence dashboard.
 
-## What it shows
-- Deal dashboard with key KPIs (exposure, risk, margin)
-- Risk-focused deal table with filter controls
-- FX monitor and geopolitical/risk feed
-- Lightweight 3-month sales forecast projection
+The system enables exporters, importers, and supply-chain operators to evaluate trade corridors, understand risk drivers, and make optimized sourcing and routing decisions.
 
-## Run locally
-Because this is a static frontend prototype, you can open `index.html` directly in a browser.
+---
 
-Optional local server:
-```bash
-python3 -m http.server 4173
+## 🚀 Key Features
+
+### 📊 Market Intelligence
+
+* Multi-currency FX monitoring dashboard
+* Synthetic FX volatility modeling
+* Currency exposure analytics
+
+### 🏛 Policy & Tariff Intelligence
+
+* Bilateral tariff risk scoring engine
+* Trade agreement awareness
+* Corridor-level policy risk modeling
+
+### 📦 Product & Compliance Intelligence
+
+* HS category-based compliance scoring
+* Product regulatory complexity assessment
+* Category-driven operational risk signals
+
+### 🌐 Geopolitical Intelligence
+
+* Country-level political stability mapping
+* Corridor macro-risk aggregation
+* Bilateral stability index feature engineering
+
+### 🤖 AI Risk Prediction
+
+* Composite trade risk label generation (weak supervision)
+* Random Forest risk prediction model
+* Feature importance explainability
+* ML-ready feature engineering pipeline
+
+### 🖥 Product Experience
+
+* Interactive frontend dashboard
+* Backend inference API
+* Scenario-driven trade risk exploration
+
+---
+
+## 🧠 Risk Modeling Framework
+
+ImExIQ models trade risk as a multi-dimensional function:
+
 ```
-Then visit: `http://localhost:4173`
+Trade Risk = f(
+  Tariff Risk,
+  FX Volatility,
+  Compliance Risk,
+  Political Stability,
+  Logistics Signals
+)
+```
 
-## Hackathon notes
-- Built for 24-hour demo speed
-- Uses mock data and deterministic formulas for risk and forecasting visuals
-- Ready to extend with real APIs (shipping, FX, customs, credit risk)
+A synthetic composite label is first generated using domain-weighted aggregation, after which machine learning models learn latent relationships between features and risk outcomes.
+
+---
+
+## 🏗 System Architecture
+
+```
+Frontend (React Dashboard)
+        ↓
+Backend API (Inference & Data Layer)
+        ↓
+ML Model (Risk Prediction Engine)
+```
+
+* **Frontend** → Visualizes FX, corridor analytics, and risk outputs
+* **Backend** → Handles data processing, scoring, and inference
+* **Model Layer** → Predicts final trade risk score
+
+---
+
+## 📁 Project Structure
+
+```
+ImExIQ/
+│
+├── backend/
+│   ├── api/
+│   └── main.py
+│
+├── frontend/
+│   └── src/
+│
+├── ml/
+│   └── risk_scoring/
+│
+├── data/
+│
+├── artifacts/
+│   └── trade_risk_model.pkl
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone repository
+
+```bash
+git clone <repo-url>
+cd ImExIQ
+```
+
+### 2️⃣ Backend setup
+
+```bash
+pip install -r requirements.txt
+uvicorn backend.main:app --reload
+```
+
+### 3️⃣ Frontend setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🤖 Model Training
+
+Train the risk prediction model:
+
+```bash
+python ml/risk_scoring/train_risk_model.py
+```
+
+Outputs:
+
+* trained model artifact
+* evaluation metrics
+* feature importance
+
+---
+
+## 📡 Deployment
+
+Recommended stack:
+
+| Layer    | Deployment          |
+| -------- | ------------------- |
+| Frontend | Vercel              |
+| Backend  | Render              |
+| Model    | Embedded in backend |
+
+---
+
+## 📈 Example Use Case
+
+1. User inputs trade corridor (origin, destination, product)
+2. System computes engineered risk signals
+3. ML model predicts composite risk score
+4. Dashboard visualizes risk and underlying drivers
+
+---
+
+## 🎯 Project Vision
+
+ImExIQ aims to evolve into a **global trade intelligence layer** that continuously ingests market, policy, and supply-chain signals to deliver predictive trade risk insights and optimization recommendations.
+
+---
+
+## 👨‍💻 Contributors
+
+* Tanmay Singh
+* Project collaborators
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+**ImExIQ — Intelligent decisions for global trade.**
