@@ -12,7 +12,7 @@ The system enables exporters, importers, and supply-chain operators to evaluate 
 
 * Multi-currency FX monitoring dashboard
 * Synthetic FX volatility modeling
-* Currency exposure analytics
+* Currency exposure analytics.
 
 ### 🏛 Policy & Tariff Intelligence
 
